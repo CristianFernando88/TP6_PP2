@@ -1,7 +1,7 @@
-export function Main(){
+export function Main({children}){
     return(
         <main>
-            <h1>este es el main</h1>
+            {children}
         </main>
     )
 }

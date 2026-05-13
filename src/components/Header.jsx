@@ -5,6 +5,8 @@ export function Header(){
                 <h1>TP 6 - PRACTICA 2</h1>
             </div>
             <nav>
+                <a href="">Card Static</a>
+                <a href="">Contador</a>
                 <a href="">Productos</a>
                 <a href="">Todo-App</a>
             </nav>

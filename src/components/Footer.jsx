@@ -1,7 +1,8 @@
 export function Footer(){
+    const anioActual = new Date().getFullYear();
     return (
         <footer>
-            Este es el footer
+            <p>&copy; {anioActual} Mi Sitio Web. Todos los derechos reservados.</p>
         </footer>
     )
 }
