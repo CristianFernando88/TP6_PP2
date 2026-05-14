@@ -3,11 +3,12 @@ export function Contador() {
     const [contador, setContador] = useState(0);
     return (
         <div className="contador">
-            <h2>Contador</h2>
-            <p>{contador}</p>
-            <button onClick={() => setContador(contador + 1)}>Incrementar</button>
-            <button onClick={() => setContador(contador - 1)}>Decrementar</button>
-            <button onClick={() => setContador(0)}>Reiniciar</button>
+            <h2>Contador interactivo</h2>
+            <p style={{ color: contador === 0 ? "red" : "green" }}>{contador}</p>
+            
+            <button onClick={() => setContador(contador + 1)}><i class="fa-solid fa-plus"></i></button>
+            <button onClick={() => setContador(contador - 1)} disabled={contador===0}><i class="fa-solid fa-minus"></i></button>
+            <button onClick={() => setContador(0)}><i class="fa-solid fa-arrow-rotate-left"></i></button>
         </div>
     );
 }
