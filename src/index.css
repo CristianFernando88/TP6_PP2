@@ -159,6 +159,13 @@
   padding: var(--space-4);
   width: 100%;
 }
+.container-card{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+  width: 100%;
+}
 .formulario{
   display: flex;
   flex-direction: column;
@@ -202,4 +209,23 @@
   flex-direction: column;
   align-items: center;
   gap: var(--space-2);
+}
+
+.form-filter{
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.form-filter label{
+  color: var(--text);
+}
+.form-filter select{
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--secondary);
+}
+.form-filter checkbox{
+  width: 20px;
+  height: 20px;
 }
