@@ -133,3 +133,19 @@
   transition: background-color 0.3s ease;
   margin: 5px;
 }
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: var(--radius);
+  background-color: var(--bg-secondary);
+  box-shadow: var(--shadow);
+}
+.formulario label{
+  color: var(--text);
+}
+.formulario input{
+  height: 20px;
+  border-radius: var(--radius-sm);
+}
