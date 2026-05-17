@@ -11,8 +11,10 @@
   /* Fondos y textos */
   --bg: #ffffff;
   --bg-secondary: #f8fafc;
+  --bg-tertiary: #e2e8f0;
   --text: #0f172a;
   --text-light: #64748b;
+  --text-ligthter: #e7ebf0;
   
   /* Espaciado (basado en 4px) */
   --space-1: 4px;
@@ -134,7 +136,8 @@
   margin: 5px;
 }
 
-.formulario{
+/* .formulario{
+
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -148,4 +151,142 @@
 .formulario input{
   height: 20px;
   border-radius: var(--radius-sm);
+} */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  width: 100%;
+}
+.container-card{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+  width: 100%;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+  border-radius: var(--radius);
+  background-color: var(--bg-secondary);
+  box-shadow: var(--shadow);
+  max-width: 400px;
+  width: 100%;
+}
+.formulario label{
+  color: var(--text);
+  margin-bottom: var(--space-2);
+}
+.formulario input{
+  height: 30px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--secondary);
+  padding: var(--space-2);
+
+}
+.formulario .button{
+  margin-top: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--primary);
+  color: var(--bg);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:disabled{
+  background-color: var(--secondary);
+  cursor: not-allowed;
+}
+.formulario .button:hover{
+  background-color: var(--primary-dark);
+}
+.preview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.form-filter{
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.form-filter label{
+  color: var(--text);
+}
+.form-filter select{
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--secondary);
+}
+.form-filter checkbox{
+  width: 20px;
+  height: 20px;
+}
+
+/* TodoApp */
+.form-tarea{
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+.form-tarea input{
+  flex: 1;
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--secondary);
+}
+.form-tarea button{
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--primary);
+  color: var(--bg);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.tarea{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2);
+  margin-bottom: var(--space-2);
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  width: 300px;
+  box-shadow: var(--shadow);
+  color: var(--text);
+  font-weight: bold;
+}
+.tarea:hover{
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--succe);
+  cursor: pointer;
+}
+.tarea.completada{
+  background-color: var(--bg);
+  
+}
+.tarea.completada p{
+  text-decoration: line-through;
+}
+.tarea button{
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--danger);
+  color: var(--bg);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.tarea button:hover{
+  background-color: var(--warning);
 }

@@ -5,6 +5,8 @@ import { Footer } from './components/Footer'
 import { Card } from './components/Card'
 import { Contador } from './components/Contador'
 import ContactForm from './components/ContactForm'
+import ProductList from './components/ProductList'
+import TodoApp from './components/TodoApp'
 function App() {
 
   return (
@@ -17,6 +19,8 @@ function App() {
         precio="$19.99"/> */}
         <Contador />
         <ContactForm></ContactForm>
+        <ProductList></ProductList>
+        <TodoApp></TodoApp>
       </Main>
       <Footer></Footer>
     </>
